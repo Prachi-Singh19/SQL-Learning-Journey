@@ -1,0 +1,38 @@
+What is SQL?
+SQL (Structured Query Language) is used to communicate with a database.
+It helps us store, retrieve, update, and delete data.
+
+What is SELECT?
+
+The SELECT statement is used to retrieve data from a table in a database.
+It is the most basic and most commonly used SQL command.
+
+Syntax
+SELECT column_name
+FROM table_name;
+
+| id | name | salary |
+| -- | ---- | ------ |
+| 1  | Ravi | 50000  |
+| 2  | Neha | 60000  |
+| 3  | Aman | 55000  |
+
+Example 1: Select all columns
+SELECT *
+FROM employees;
+Explanation:
+* means all columns.
+This query will display all records from the employees table.
+
+
+Example 2: Select specific columns
+SELECT name, salary
+FROM employees;
+Explanation:
+This query shows only the name and salary columns from the table.
+Output:
+| name | salary |
+| ---- | ------ |
+| Ravi | 50000  |
+| Neha | 60000  |
+| Aman | 55000  |
