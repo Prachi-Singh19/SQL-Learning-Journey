@@ -1,0 +1,48 @@
+What is WHERE?
+
+The WHERE clause is used to filter records in a table.
+It allows us to retrieve only the data that satisfies a specific condition.
+
+In simple words, WHERE helps us select only the rows we need.
+
+Synatx:
+SELECT column_name
+FROM table_name
+WHERE condition;
+
+Example Table: employees
+| id | name | salary |
+| -- | ---- | ------ |
+| 1  | Ravi | 50000  |
+| 2  | Neha | 60000  |
+| 3  | Aman | 55000  |
+
+Example 1: Find employee with salary 60000
+Explaination:
+SELECT *
+FROM employees
+WHERE salary = 60000;
+
+output
+| id | name | salary |
+| -- | ---- | ------ |
+| 2  | Neha | 60000  |
+
+Example 2: Select employee named Ravi
+SELECT *
+FROM employees
+WHERE name = 'Ravi';
+
+Explanation:
+This query returns the record where the name is Ravi.
+
+Common Operators used with WHERE
+| Operator | Meaning               |
+| -------- | --------------------- |
+| =        | Equal                 |
+| >        | Greater than          |
+| <        | Less than             |
+| >=       | Greater than or equal |
+| <=       | Less than or equal    |
+| !=       | Not equal             |
+
