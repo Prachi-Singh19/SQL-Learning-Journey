@@ -1,0 +1,63 @@
+What are AND, OR, NOT?
+These are logical operators used with the WHERE clause to combine multiple conditions.
+They help us filter data more precisely.
+
+1. AND Operator
+The AND operator returns records only if all conditions are true.
+
+Syntax:
+SELECT column_name
+FROM table_name
+WHERE condition1 AND condition2;
+
+Example:
+SELECT *
+FROM employees
+WHERE salary > 50000 AND name = 'Neha';
+
+Explaination:
+This query returns rows where:
+1.salary is greater than 50000
+2.AND name is Neha
+
+Both conditions must be true.
+
+
+
+2.OR Operator
+The OR operator returns records if at least one condition is true.
+
+Syntax:
+SELECT column_name
+FROM table_name
+WHERE condition1 OR condition2;
+
+Example:
+SELECT *
+FROM employees
+WHERE name = 'Ravi' OR salary = 60000;
+
+Explaination:
+This query returns rows where:
+1.name is Ravi
+2.OR salary is 60000
+
+If any condition is true, the row will appear.
+
+3. NOT Operator
+The NOT operator is used to exclude a condition.
+
+Syntax:
+SELECT column_name
+FROM table_name
+WHERE NOT condition;
+
+Example:
+SELECT *
+FROM employees
+WHERE NOT salary = 50000;
+
+Explanation:
+This query returns employees whose salary is not 50000.
+
+
